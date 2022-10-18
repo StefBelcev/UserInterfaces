@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <title>Portfolio projects</title>
+    <link rel="stylesheet" type="text/css" href="./css/bootstrap.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <style>
+        body{
+            font-family: 'Montserrat', sans-serif;
+            font-size:13px;
+        }
+        input[type=text], input[type=password], input[type=email], button {
+            border-radius: 4px !important;
+            font-weight:500;
+        }
+        label{
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="row d-flex justify-content-center align-items-center h-100 mt-5">
+        <div class="col-2 col-xs-2 col-sm-2 col-md-2 col-lg-4 col-xl-4">
+
+        </div>
+        <div class="col-8 col-xs-8 col-sm-8 col-md-6 col-lg-4 col-xl-4">
+            <form>
+                <div class="row">
+                    <div class="col-md-12">
+                        <h4>Payment Page</h4>
+                    </div>
+                    <div class="col-md-12 form-group">
+                        <hr/>
+                        <div class="progress">
+                            <div class="font-weight-bold progress-bar progress-bar-striped  w-100" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100">
+                                Step 4: Payment
+                            </div>
+                        </div>
+                        <hr/>
+                    </div>
+                    <div class="col-md-12 form-group">
+                        <label for="NameOnCard">Name on Card</label>
+                        <input type="text" id="NameOnCard" class="form-control mr-4 pl-3" aria-label="Name on Card" aria-describedby="basic-addon1">
+                    </div>
+                    <div class="col-md-12 form-group">
+                        <label for="CardName">Card Name</label>
+                        <input type="text" id="CardName" class="form-control mr-4 pl-3" aria-label="Card Name" aria-describedby="basic-addon1" required>
+                        <div class="invalid-feedback">
+                            Credit card number is required
+                        </div>
+                    </div>
+                    <div class="col-md-12 form-group">
+                        <label for="BillingAddress">Billing Address</label>
+                        <input type="text" id="BillingAddress" class="form-control mr-4 pl-3" aria-label="Billing Address" aria-describedby="basic-addon1" required>
+                        <div class="invalid-feedback">
+                            Credit card number is required
+                        </div>
+                    </div>
+                    <div class="col-md-12 form-group">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <label for="CVV">CVV</label>
+                                <input type="text" class="form-control w-100 mr-5" id="CVV" placeholder="ex. 311" required>
+                            </div>
+                            <div class="col-md-4">
+                                <label for="Expiration">Expiration</label>
+                                <input type="text" class="form-control" id="Expiration" placeholder="MM" required>
+                            </div>
+                            <div class="col-md-4">
+                                <label style="visibility:hidden" for="Expiration1">Expiration</label>
+                                <input type="text" class="form-control" id="Expiration1" placeholder="YYYY" required>
+                            </div>
+                        </div>
+                       <hr style="margin-top:2rem;"/>
+                    </div>
+                    <div class="col-md-12 form-group mt-1">
+                        <button type="button" class="btn btn-success btn-block"><span class="badge bg-white text-success" style="border-radius:8px">Your total today: $300</span></button>
+                        <button type="button" class="btn btn-primary btn-block">Pay &gt &gt</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="col-2 col-xs-2 col-sm-2 col-md-2 col-lg-4 col-xl-4">
+
+        </div>
+    </div>
+</div>
+
+<script src="./js/jquery-3.4.1.slim.min.js" type="text/javascript"></script>
+<script src="./js/bootstrap.bundle.js" type="text/javascript" ></script>
+<script src="./js/bootstrap.js" type="text/javascript" ></script>
+</body>
+</html>

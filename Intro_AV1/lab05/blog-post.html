@@ -1,0 +1,279 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./fontawesome/css/all.min.css">
+    <title>Blog list</title>
+    <style>
+        .fas{
+            font-size:13px;
+        }
+        .navbar-nav > .nav-item{
+            height:45px;
+        }
+        .active{
+            background-color:#000000;
+        }
+        .badge{
+            padding:5px 5px;
+            border-radius:12px;
+        }
+        .blog-search, .blog-popular-tags, .blog-follow, .popular-posts, .featured-books, .post-comment {
+            border: 1px solid #80808045;
+            background-color: #f1f1f152;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-12">
+            <nav class="navbar navbar-expand navbar-dark bg-dark navbar-fixed-top d-flex align-content-center">
+                <a class="navbar-brand " href="#">Blog Post</a>
+                    <ul class="navbar-nav mr-auto text-center">
+                        <li class="nav-item pr-1 pl-1">
+                            <a class="nav-link" href="#"><i class="fas fa-home pr-1"></i>Home</a>
+                        </li>
+                        <li class="nav-item pl-1 pr-1 active">
+                            <a class="nav-link" href="#"><i class="fas fa-book pr-1"></i><span class="sr-only">(current)</span>Posts</a>
+                        </li>
+                        <li class="nav-item pl-1 pr-1">
+                            <a class="nav-link" href="#"><i class="fas fa-envelope pr-1"></i>Contact</a>
+                        </li>
+                        <li class="nav-item pl-1 pr-1">
+                            <a class="nav-link" href="#"><i class="fas fa-user pr-1"></i>About</a>
+                        </li>
+                        <li class="nav-item ml-3">
+                            <form class="form-inline my-2 my-lg-0">
+                                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                            </form>
+                        </li>
+                    </ul>
+            </nav>
+        </div>
+    </div>
+        <div class="row mt-5 pl-3 pr-3">
+            <div class="col-sm-1"></div>
+            <div class="col-sm-7">
+                <div class="post-content">
+                    <div class="post-title">
+                        <h1>
+                            <a href="#">Blog Post</a>
+                        </h1>
+                    </div>
+                    <div class="post-author">
+                    <p class="lead"><i style="font-size:15px" class="fas fa-user"></i> by <a href="#">FINKI</a></p>
+                    </div>
+                    <hr>
+                    <div class="post-date">
+                        <p><i class="far fa-calendar-alt pr-2"></i>Posted on August 24, 2014 at 9:00 PM</p>
+                    </div>
+                    <div class="post-tags">
+                        <p><i class="fas fa-tags"></i> Tags:
+                            <a href="#"><span class="badge badge-secondary">Bootstrap</span></a>
+                            <a href="#"><span class="badge badge-secondary">Web</span></a>
+                            <a href="#"><span class="badge badge-secondary">CSS</span></a>
+                            <a href="#"><span class="badge badge-secondary">HTML</span></a>
+                        </p>
+                    </div>
+                    <hr>
+                    <div class="post-img mt-2 mb-2">
+                        <img src="./img/900x300.png" class="img-fluid" alt="post image">
+                    </div>
+                    <hr/>
+                    <div class="post-description">
+                        <h5 class="pt-3 pb-4">Pellentesque lacinia placerat leo, eu pretium dolor finibus a. DOnec bibendum pulvinar dolor, in dodales enim blandit et. Phasellus et diam enim.</h5>
+                    <p class="mb-5" style="font-size:14px;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    <p> Lorem ipsum dolor Lorem ipsum Lorem ipsum dolor Lorem ipsum Lorem ipsum dolor Lorem ipsum</p>
+                        <div class="blockquote">
+                            <blockquote>
+                                <h5>„Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.”</h5>
+                                <br/>
+                                <p style="font-size:15px">-- Someone famous in <cite title="Source Title">Source Title</cite></p>
+                                <br/>
+                            </blockquote>
+                        </div>
+                        <h5>I like the post? Like This!</h5>
+                        <div class="post-share d-inline-block">
+                            <p class="d-inline"><span style="border-radius: 2px; background-color:#f6f6f6" class="pl-1 pr-1"><i class="fab fa-twitter"></i> Twitter</span></p>
+                            <p class="d-inline"><span style="border-radius: 2px; background-color:#f6f6f6" class="pl-1 pr-1"><i class="fab fa-google-plus-g"></i> Recommend this on Google</span></p>
+                        </div>
+                        <hr/>
+                    </div>
+                    <div class="post-comment pr-3 pl-3 pt-3 pb-3">
+                            <h4><i style="font-size: 20px;" class="fas fa-paper-plane"></i> Leave a Comment:</h4>
+                            <div class="form-group">
+                                <textarea class="form-control" rows="3"></textarea>
+                            </div>
+                        <button type="button" class="btn btn-primary"><i class="fas fa-reply"></i> Submit</button>
+                    </div>
+                    <hr/>
+                    <div class="post-comments mt-2">
+                        <h5><i style="font-size: 20px;" class="fas fa-comment"></i> User One says:
+                            <small> 9:41 PM on August 24, 2014</small>
+                        </h5>
+                        <p style="font-size:14px;">Excellent post! Thank You the great article, it was useful!</p>
+                        <h5><i style="font-size: 20px;" class="fas fa-comment"></i> User Two says:
+                            <small> 9:47 PM on August 24, 2014</small>
+                        </h5>
+                        <p style="font-size:14px;">Excellent post! Thank You the great article, it was useful!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-3 mt-3">
+                <div class="blog-search pb-3 pt-3 pl-3 pr-3 mt-3">
+                    <h4><i style="font-size:20px" class="fas fa-search"></i> Blog Search...</h4>
+                    <div class="input-group">
+                        <input type="text" class="form-control" />
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" type="button">
+                                <i style="font-size:18px" class="fas fa-search"></i>
+                            </button>
+                        </span>
+                    </div>
+                </div>
+                <div class="blog-popular-tags pb-3 pt-3 pl-3 pr-3 mt-3">
+                    <h4><i style="font-size:20px" class="fas fa-tags"></i> Popular Tags:</h4>
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <ul class="list-unstyled">
+                                <li><a href=""><span class="badge badge-secondary">Windows 8</span></a>
+                                </li>
+                                <li><a href=""><span class="badge badge-secondary">C#</span></a>
+                                </li>
+                                <li><a href=""><span class="badge badge-secondary">Windows Forms</span></a>
+                                </li>
+                                <li><a href=""><span class="badge badge-secondary">WPF</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-6">
+                            <ul class="list-unstyled">
+                                <li><a href=""><span class="badge badge-secondary">Bootstrap</span></a>
+                                </li>
+                                <li><a href=""><span class="badge badge-secondary">Joomla!</span></a>
+                                </li>
+                                <li><a href=""><span class="badge badge-secondary">CMS</span></a>
+                                </li>
+                                <li><a href=""><span class="badge badge-secondary">Java</span></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- /well -->
+                <div class="blog-follow pb-3 pt-3 pl-3 pr-3 mt-3">
+                    <h4><i style="font-size:20px" class="fas fa-thumbs-up"></i> Follow me!</h4>
+                    <ul>
+                        <p>
+                            <a href="#"><span><i style="font-size:30px" class="far fa-square"><i style="position: relative;font-size: 16px;right: 18px;bottom: 6px;" class="fab fa-facebook-f"></i></i></span></a>
+                            <a href="#"><span><i style="font-size:30px" class="far fa-square"><i style="position: relative;font-size: 16px;right: 21px;bottom: 6px;" class="fab fa-twitter"></i></i></span></a>
+                            <a href="#"><span><i style="font-size:30px" class="far fa-square"><i style="position: relative;font-size: 16px;right: 23px;bottom: 6px;" class="fab fa-google-plus-g"></i></i></span></a>
+                            <a href="#"><span><i style="font-size:30px" class="far fa-square"><i style="position: relative;font-size: 16px;right: 20px;bottom: 6px;" class="fab fa-linkedin-in"></i></i></span></a>
+                            <a href="#"><span><i style="font-size:30px" class="far fa-square"><i style="position: relative;font-size: 16px;right: 21px;bottom: 6px;"  class="fab fa-github"></i></i></span></a>
+                            <a href="#"><span><i style="font-size:30px" class="far fa-square"><i style="position: relative;font-size: 16px;right: 21px;bottom: 5px;"class="fab fa-bitbucket"></i></i></span></a>
+                        </p>
+                    </ul>
+                </div>
+                <div class="popular-posts pb-3 pt-3 pl-3 pr-3 mt-3">
+                    <h4><i style="font-size:20px" class="fas fa-fire"></i> Popular Posts:</h4>
+                    <ul style="font-size:14px">
+                        <li><a href="">WPF vs. Windows Forms-Which is better?</a></li>
+                        <li><a href="">How to create responsive website with Bootstrap?</a></li>
+                        <li><a href="">The best Joomla! templates 2014</a></li>
+                        <li><a href="">ASP .NET cms list</a></li>
+                        <li><a href="">C# Hello, World! program</a></li>
+                        <li><a href="">Java random generator</a></li>
+                    </ul>
+                </div>
+                <div class="featured-books pt-3 pl-3 pr-3 mt-3">
+                    <h4><i style="font-size:20px" class="fas fa-book"></i> Featured books:</h4>
+                    <div class="row">
+                        <div class="col-sm-12">
+                            <div>
+                                    <img style="z-index: 1" src="./img/500x330.png" class="img-thumbnail" alt="featured books photo">
+                                    <h3 class="pt-2 pb-2 bg-dark text-white text-center">Book 1</h3>
+                                    <img style="z-index: 1" src="./img/500x330.png" class="img-thumbnail" alt="featured books photo">
+                                    <h3 class="pt-2 pb-2 bg-dark text-white text-center">Book 1</h3>
+                            </div>
+                        </div>
+                    </div>
+                 </div>
+    </div>
+            <div class="col-sm-1">
+            </div>
+        </div>
+    <hr style="width:80%"/>
+    <div class="row pl-3 pr-3">
+                <div class="col-sm-1"></div>
+                <div class="col-sm-5">
+                    <div class="row">
+                        <div class="col-sm-6">
+                                    <div class="images">
+                                        <p>
+                                            <img src="./img/500x330.png" class="img-thumbnail" alt="500 x 300">
+                                            <h3 class="mt-n3 pt-2 pb-2 bg-dark text-white text-center">THIS IS H3</h3>
+                                        </p>
+                                    </div>
+
+                        </div>
+                        <div class="col-sm-6">
+                                    <div class="images">
+                                        <p>
+                                            <img src="./img/500x330.png" class="img-thumbnail" alt="500 x 300">
+                                            <h3 class="mt-n3 pt-2 pb-2 bg-dark text-white text-center">THIS IS H3</h3>
+                                        </p>
+                                    </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-2 categories">
+                                <h3>Categories:</h3>
+                                <ul style="font-size:16px">
+                                    <li><a href=""><i class="fas fa-file"></i> News</a></li>
+                                    <li><a href=""><i class="fab fa-android"></i> Android</a></li>
+                                    <li><a href=""><i class="fas fa-code"></i> C#</a></li>
+                                    <li><a href=""><i class="fas fa-code"></i> Java</a></li>
+                                    <li><a href=""><i class="fas fa-book"></i> Books</a></li>
+                                    <li><a href=""><i class="fas fa-globe"></i> Web</a></li>
+                                    <li><a href=""><i class="fab fa-windows"></i> Windows</a></li>
+                                </ul>
+                </div>
+                <div class="col-sm-3 contact d-table-cell align-items-center">
+                    <h3>Contact:</h3>
+                    <p>Have a question or feedback? Contact me!</p>
+                    <p><a href="" title="Contact me!"><i class="fa fa-envelope"></i> Contact</a></p>
+                    <h3>Follow:</h3>
+                    <a href="#"><span class="pr-3 "><i style="font-size:30px" class="far fa-square"><i style="position: relative;font-size: 16px;right: 21px;bottom: 6px;" class="fab fa-twitter"></i></i>Twitter</span></a>
+                    <a href="#"><span><i style="font-size:30px" class="far fa-square"><i style="position: relative;font-size: 16px;right: 21px;bottom: 6px;"  class="fab fa-github"></i></i>Github</span></a>
+                </div>
+                <div class="col-sm-1"></div>
+    </div>
+    <div class="row">
+                <div class="col-sm-1"></div>
+                <div class="col-sm-10 post-share d-inline-block">
+                    <p class="d-inline"><span style="border-radius: 2px; background-color:#f6f6f6" class="pl-1 pr-1"><i class="fab fa-twitter"></i> Twitter</span></p>
+                    <p class="d-inline"><span style="border-radius: 2px; background-color:#f6f6f6" class="pl-1 pr-1"><i class="fab fa-google-plus-g"></i> Recommend this on Google</span></p>
+                <br/>
+                <br/>
+                    <hr>
+
+                    <p class="pl-3" style="font-size:14px;">Copyright © Your Website | <a href="">Privacy Policy</a> | <a href="">Terms of Use</a></p>
+
+                </div>
+
+                <div class="col-sm-1"></div>
+    </div>
+</div>
+<script src="js/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+<script src="js/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<script src="js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+</html>
